@@ -1,17 +1,18 @@
+ 
 {
   "encoding": "UTF-8",
   "headers": {
     "/*": {
       "Access-Control-Allow-Origin": "*"
     },
-    "/login/{
+    "/promise/*": {
       "Access-Control-Allow-Origin": "*"
     },
-    "/promise/{
+    "/login/*": {
       "Access-Control-Allow-Origin": "*"
     },
-    "/fetch/{
+     "/fetch/*": {
       "Access-Control-Allow-Origin": "*"
-    }
+    }    
   }    
 }
