@@ -14,9 +14,9 @@
         let inp = document.querySelector('#inp');
         document.querySelector('#bt').addEventListener('click' , inpValue);
         
-       function inpValue(){
-           let x = fetch(inp.value);
-           inp.value = x;
+        async function inpValue(){
+           const res = await fetch(inp.value);
+           inp.value = await res.text();
        }
     </script>
 </body>
