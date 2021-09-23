@@ -1,4 +1,7 @@
 function task(x){
-  const pr = x => new Promise((res, rej) => x < 18? rej('yes') : res('no'));
-  return  pr(x).then(x => x).catch(e => e);
+    if (x < 18){
+        return Promise.resolve('yes')
+    } else {
+        return Promise.reject('no')
+    }
 }
